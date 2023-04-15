@@ -1,8 +1,10 @@
 import React from "react";
+import Header from "./Header";
 
 const Home = () => {
   return (
-    <div>
+    <>
+      <Header />
       <p>home</p>
       <p>home</p>
       <p>home</p>
@@ -32,7 +34,7 @@ const Home = () => {
       <p>home</p>
       <p>home</p>
       <p>home</p>
-    </div>
+    </>
   );
 };
 
