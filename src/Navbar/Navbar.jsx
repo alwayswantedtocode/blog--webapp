@@ -11,9 +11,9 @@ const Navbar = () => {
 
   return (
     <header className="nav-Header w-full h-[5rem] bg-blue-500 flex items-center sticky top-0 z-50">
-      <nav className="nav-area w-full h-[3rem] bg-green-500 flex items-center  justify-between  ">
+      <nav className="nav-area w-full h-[3rem] bg-green-500 flex items-center justify-between md:flex">
         {/* Logo */}
-        <div className="Logo w-fit content h-full mx-3 md:mx-5">
+        <div className="Logo w-fit content h-full   mx-3 md:mr-0">
           <img
             src="images/Logo/log_By_Wix.jpg"
             alt="Logo"
@@ -28,7 +28,7 @@ const Navbar = () => {
           {revealMenu ? <FiX /> : <FiAlignJustify />}
         </button>
         {/* Navigation area */}
-        <div className="nav-container text-lg font-normal   hidden  md:flex  lg:flex ">
+        <div className="nav-container text-lg  font-normal hidden  md:flex  mx-auto lg:flex  ">
           {Data.map((menu, index) => {
             const { Menu, Path, id } = menu;
             return (
@@ -40,30 +40,31 @@ const Navbar = () => {
             );
           })}
         </div>
-        {/* Profile Search and social media area */}
-        <article className="socials w-fit conent h-full flex items-center hidden md:flex  lg:flex mx-5 ">
+        {/* Profile Search area */}{" "}
+        <article className="profile-search  flex hidden md:flex ">
+          <div className="search-bar w-[2.5rem] h-[2.5rem ] text-3xl font-normal flex items-center justify-center cursor-pointer mx-3  ">
+            <BiSearch />
+          </div>
+          <div className="profile-pic w-[2.5rem] h-[2.5rem ] rounded-l-full rounded-r-full cursor-pointer mx-2  ">
+            <img
+              src="images/profile-image/R.jpg"
+              alt="Profile"
+              className=" object-cover h-[2.5rem] content w-[2.5rem] rounded-l-full rounded-r-full"
+            />
+          </div>
+        </article>
+        {/* social media area */}
+        <article className="socials w-fit conent h-full flex items-center hidden md:flex mr-5 ">
           {/* Icon area */}
           <div className="icon-container  h-full w-fit content flex items-center">
             {Data.map((icons) => {
               const { Icon, id } = icons;
               return (
-                <div className="icons cursor-pointer text-xl mx-2" key={id}>
+                <div className="icons cursor-pointer text-xl mx-1" key={id}>
                   {Icon}
                 </div>
               );
             })}
-          </div>
-        </article>
-        <article className="profile-search flex hidden md:flex ">
-          <div className="profile-pic w-[2.5rem] h-[2.5rem ] rounded-l-full rounded-r-full cursor-pointer mx-2  ">
-            <img
-              src="images/profile-image/R.jpg"
-              alt="Profile Image"
-              className=" object-cover h-[2.5rem] content w-[2.5rem] rounded-l-full rounded-r-full"
-            />
-          </div>
-          <div className="search-bar w-[2.5rem] h-[2.5rem ] text-3xl font-normal flex items-center justify-center cursor-pointer mx-3  ">
-            <BiSearch />
           </div>
         </article>
       </nav>

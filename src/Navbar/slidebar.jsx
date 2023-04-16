@@ -9,8 +9,8 @@ const Slidebar = () => {
     <>
       {/* to have the aside contro the animation of the side bar, use tenery operation for aside only */}
       <aside
-        className={`  md:hidden   ${
-          revealMenu ? "SideSlideWrap active" : "SideSlideWrap"
+        className={`SideSlideWrap fixed top[5rem] right-0 w-full h-full z-50 grid place-items-center transition-all duration-500 ease-in-out transform scale-100 bg-black bg-opacity-30  md:hidden   ${
+          revealMenu ? "visible" : "invisible"
         }`}
       >
         {/* For side bar that slide right let -translate-x-full be translate-x-full */}
@@ -32,12 +32,12 @@ const Slidebar = () => {
               );
             })}
 
-            <section className="slide-footer-container flex justify-center w-full h-[4rem] relative top-[10rem] border-[2px] border-red-500 ">
+            <section className="slide-footer-container flex justify-start w-full h-[4rem] relative top-[2rem] border-[2px] border-red-500 ">
               {data.map((Icons) => {
                 const { Icon, id } = Icons;
                 return (
                   <button
-                    className="slide-footer text-blue-600 text-2xl mx-[0.5rem]  cursor-pointer"
+                    className="slide-footer text-gray-400 text-xl mx-[0.5rem]  cursor-pointer"
                     key={id}
                   >
                     {Icon}
