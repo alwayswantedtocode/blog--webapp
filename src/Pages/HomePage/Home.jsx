@@ -11,6 +11,7 @@ const Home = () => {
       </section>
       <section className="Post-sideinfo-section flex justify-between mt-2">
         <Posts />
+        <hr/>
         <SideInfo />
       </section>
     </>

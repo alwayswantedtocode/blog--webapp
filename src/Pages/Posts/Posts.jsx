@@ -3,7 +3,7 @@ import Post from "./Post";
 
 const Posts = () => {
   return (
-    <article className="flex flex-col">
+    <article className="flex flex-col flex-1 ">
       <Post />
       <Post />
       <Post />
