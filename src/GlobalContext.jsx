@@ -6,20 +6,20 @@ export const AppProvider = ({ children }) => {
   const [revealMenu, setRevealMenu] = useState(false);
   const [isProfileOpened, setIsProfileOpened] = useState(false);
 
-  const openMenu = () => {
+  const openProfile = () => {
     setIsProfileOpened(true);
   };
 
-  const closeMenu = () => {
-    setIsProfileOpened(false);
-  };
-
+   const closeProfile = () => {
+     setIsProfileOpened(false);
+   };
   return (
     <GlobalContext.Provider
       value={{
         isProfileOpened,
-        openMenu,
-        closeMenu,
+        openProfile,
+        closeProfile,
+        setIsProfileOpened,
         revealMenu,
         setRevealMenu,
       }}

@@ -9,7 +9,7 @@ const Slidebar = () => {
     <>
       {/* to have the aside contro the animation of the side bar, use tenery operation for aside only */}
       <aside
-        className={`SideSlideWrap fixed top[5rem] right-0 w-full h-full z-50 grid place-items-center transition-all duration-500 ease-in-out transform scale-100 bg-black bg-opacity-30  md:hidden   ${
+        className={`SideSlideWrap fixed top[5rem] right-0 w-full h-full z-[100] grid place-items-center transition-all duration-500 ease-in-out transform scale-100 bg-black bg-opacity-30  md:hidden   ${
           revealMenu ? "visible" : "invisible"
         }`}
       >

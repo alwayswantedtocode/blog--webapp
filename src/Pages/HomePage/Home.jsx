@@ -2,19 +2,20 @@ import React from "react";
 import Header from "./Header";
 import Posts from "../Posts/Posts";
 import SideInfo from "./SideInfo";
-
+import { useGlobalContext } from "../../GlobalContext";
 const Home = () => {
+  const {closeProfile}=useGlobalContext()
   return (
-    <>
-      <section className="header-section">
+    <section onClick={closeProfile}>
+      <div className="header-section">
         <Header />
-      </section>
-      <section className="Post-sideinfo-section flex justify-between mt-2">
+      </div>
+      <div className="Post-sideinfo-section flex justify-between mt-2">
         <Posts />
-        <hr/>
+        <hr />
         <SideInfo />
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 

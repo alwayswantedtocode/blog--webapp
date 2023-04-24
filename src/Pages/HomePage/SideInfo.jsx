@@ -3,7 +3,7 @@ import categories from "./homedata";
 
 const SideInfo = () => {
   return (
-    <article className=" sideInfo flex-2 w-[17rem] h-fit content  px-[0.3rem] bg-stone-50 hidden  md:block lg:block lg:w-[20rem] ">
+    <article className=" sideInfo flex-2 w-[17rem] h-fit content px-[0.3rem] bg-stone-50 hidden  md:block lg:block lg:w-[20rem] ">
       <div className="sideinfo-item flex flex-col items-center">
         <span className="title uppercase flex justify-center border-t-2 border-gray-300 border-b-2 border-gray-300 my-3">
           About me
