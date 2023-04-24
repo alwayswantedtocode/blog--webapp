@@ -7,6 +7,7 @@ module.exports = {
         sans: ["Roboto Condensed", "sans-serif"],
         serif: ["Merriweather", "serif"],
         slab: ["Roboto Slab", "serif"],
+        mono: ["Chivo Mono", "monospace"],
       },
     },
   },

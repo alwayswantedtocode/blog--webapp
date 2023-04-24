@@ -1,10 +1,10 @@
 import React from "react";
 import Header from "./Header";
 import Posts from "../Posts/Posts";
-import SideInfo from "./SideInfo";
+import SideInfo from "./SideDetails/SideInfo";
 import { useGlobalContext } from "../../GlobalContext";
 const Home = () => {
-  const {closeProfile}=useGlobalContext()
+  const { closeProfile } = useGlobalContext();
   return (
     <section onClick={closeProfile}>
       <div className="header-section">

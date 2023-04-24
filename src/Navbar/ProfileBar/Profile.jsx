@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { BiChevronDown } from "react-icons/bi";
 import { useGlobalContext } from "../../GlobalContext";
 const Profile = () => {
-  const {isShowProfile, setIsShowProfile, openProfile} = useGlobalContext();
+  const { isShowProfile, setIsShowProfile, openProfile } = useGlobalContext();
   return (
-    <div className="ProfileBar  flex items-center justify-center mx-[1rem]">
+    <div className="ProfileBar  flex items-center justify-center mx-[1rem] ">
       <div className="profile-pic w-[2.5rem] h-[2.5rem ] rounded-l-full rounded-r-full ml-1">
         <img
           src="images/profile-image/user-logo.png"
@@ -14,7 +14,7 @@ const Profile = () => {
         />
       </div>
       <div
-        className="chevrondown border-[2px] border-blue-600 flex justify-center items-center text-lg cursor-pointer color-gray-500 hover:color-gray-100 "
+        className="chevrondown flex justify-center items-center text-lg cursor-pointer color-gray-500 hover:color-gray-100 "
         onClick={openProfile}
       >
         <BiChevronDown />

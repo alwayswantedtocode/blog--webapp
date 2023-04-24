@@ -11,8 +11,8 @@ const Navbar = () => {
   const { revealMenu, setRevealMenu, openProfile } = useGlobalContext();
 
   return (
-    <header className="nav-Header w-full h-[4.5rem] bg-white flex items-center sticky top-0 z-50">
-      <nav className="nav-area w-full h-[4.5rem] bg-blue-500 flex items-center  md:justify-between md:flex">
+    <header className="nav-Header w-full h-[4.5rem] bg-slate-100 flex items-center sticky top-0 z-50 shadow-md">
+      <nav className="nav-area w-full h-[4.5rem] bg-white flex items-center  md:justify-between md:flex">
         {/* Hambuger Menu */}
         <div className="btn-container flex-3">
           <button
@@ -23,18 +23,17 @@ const Navbar = () => {
           </button>
         </div>
         {/* Logo */}
-        <div className="Logo-container  mx-3 flex-1 md:mr-0">
-          <div className="logo w-[4rem]">
-            <img
-              src="images/Logo/log_By_Wix.jpg"
-              alt="Logo"
-              className=" w-fit content h-full"
-            />
+        <div className="Logo-container  mx-3 flex-1 md:flex-9 md:mr-0 md:mx-[3rem]">
+          <div className="logo w-[4rem] flex flex-col">
+            <span className="font-mono font-extrabold  text-center">
+              Autumn
+            </span>
+            <span className="font-mono font-extralight text-center">blog</span>
           </div>
         </div>
 
         {/* Navigation area */}
-        <div className="nav-container text-lg  font-normal hidden md:flex  mx-auto lg:flex  ">
+        <div className="nav-container text-lg  font-normal hidden md:flex md:flex-1 mx-auto lg:flex  ">
           {Data.map((menu, index) => {
             const { Menu, Path, id } = menu;
             return (

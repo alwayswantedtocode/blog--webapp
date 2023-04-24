@@ -98,12 +98,12 @@ WebView scrollbar Styles
     display: block;
   }
 } */
-p{
+p {
   /* line-height: 4px; */
-  margin-top:15px;
+  margin-top: 15px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 4;
--webkit-box-orient: vertical;
+  -webkit-box-orient: vertical;
 }

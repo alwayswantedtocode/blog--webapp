@@ -8,7 +8,7 @@ const ProfileBar = () => {
   const { isProfileOpened, setIsProfileOpened } = useGlobalContext();
   return (
     <aside
-      className={` w-[15rem]  bg-[#FEFEFE] z-[60] absolute top-[9%] right-0 rounded-l-md ${
+      className={` w-[15rem]  bg-[#FEFEFE] z-[60] absolute top-[9%] right-0 rounded-l-md shadow-md  ${
         isProfileOpened ? "visible" : "invisible"
       }`}
     >
