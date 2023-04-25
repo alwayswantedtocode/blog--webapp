@@ -8,6 +8,7 @@ module.exports = {
         serif: ["Merriweather", "serif"],
         slab: ["Roboto Slab", "serif"],
         mono: ["Chivo Mono", "monospace"],
+        negative: ["Signika Negative", " sans - serif"],
       },
     },
   },

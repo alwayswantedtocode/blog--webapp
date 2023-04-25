@@ -10,9 +10,9 @@ const Home = () => {
       <div className="header-section">
         <Header />
       </div>
-      <div className="Post-sideinfo-section flex justify-between mt-2">
+      <div className="Post-sideinfo-section flex justify-between mt-2 ">
         <Posts />
-        <hr />
+
         <SideInfo />
       </div>
     </section>
