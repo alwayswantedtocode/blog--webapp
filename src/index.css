@@ -100,7 +100,7 @@ WebView scrollbar Styles
     display: block;
   }
 } */
-p {
+.Post-snipet {
   /* line-height: 4px; */
   margin-top: 15px;
   overflow: hidden;
@@ -109,3 +109,19 @@ p {
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
+.Aside-Icon {
+  position: absolute;
+  top: 15rem;
+}
+/*.Aside-Icon::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top:5px;
+  width: 0;
+   height: 0;
+   visibility: ;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  transform: translateX(-50%);
+} */

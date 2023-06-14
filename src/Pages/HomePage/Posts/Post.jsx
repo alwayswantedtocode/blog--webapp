@@ -1,16 +1,19 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Post = () => {
   return (
-    <article className="Post flex px-[1.5rem] flex-col border-r-[1px]">
+    <article className="Post flex  px-[1.5rem] flex-col border-r-[1px]">
       <div className="Posts-container border-b-[1px] mb-[1rem] px-[3rem] py-[3rem] ">
-
         <div className="img-container">
-          <img
-            src="images/black_love.jpg"
-            alt="black couple kissing"
-            className="image rounded-md "
-          />
+          <NavLink to="Singlepage" key="Singlepage">
+            {" "}
+            <img
+              src="images/black_love.jpg"
+              alt="black couple kissing"
+              className="image rounded-md "
+            />
+          </NavLink>
         </div>
         <div className="post-categories flex  text-yellow-300 items-center justify-center my-[.3rem]">
           <span className="post-category text-center mr-[0.3rem] cursor-pointer">
@@ -20,7 +23,7 @@ const Post = () => {
             Relationship
           </span>
         </div>
-       {/* Post Snipet and details */}
+        {/* Post Snipet and details */}
         <div className="author-date-info flex items-center mb-[0.5rem] ">
           <span className=" border-[1px] w-[2rem] h-[2rem] mr-[0.3rem]">
             <img src="images/profile-image/user-logo.png" alt="Profile" />
@@ -32,11 +35,13 @@ const Post = () => {
             1 hour ago
           </span>
         </div>
- <span className="post-title text-center mb-[0.4rem] flex md:text-xl font-bold cursor-pointer">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <span className="post-title justify-center items-center mb-[0.4rem] flex cursor-pointer">
+          <h1 className="md:text-xl font-bold">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </h1>
         </span>
         {/* <div className="post-description"> */}
-        <p className="text-sm text-gray-600 my-[0.3rem] ">
+        <p className=" Post-snipet text-sm text-gray-600 my-[0.3rem] ">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
           dignissimos id officia rem, nisi aliquid magni inventore commodi,
           nostrum nihil incidunt optio labore repellendus temporibus non dolores

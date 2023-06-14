@@ -1,19 +1,21 @@
 import React from "react";
+import {NavLink, Link} from "react-router-dom"
 import Header from "./Header";
-import Posts from "../Posts/Posts";
-import SideInfo from "./SideDetails/SideInfo";
+import Posts from "./Posts/Posts";
+import SideInfo from "../SideDetails/SideInfo"
 import { useGlobalContext } from "../../GlobalContext";
 const Home = () => {
-  const { closeProfile } = useGlobalContext();
+  const { handleProfileBar } = useGlobalContext();
   return (
-    <section onClick={closeProfile}>
+    // onClick={handleProfileBar}
+    <section>
       <div className="header-section">
         <Header />
       </div>
-      <div className="Post-sideinfo-section flex justify-between mt-2 ">
-        <Posts />
+      <div className="Post-sideinfo-section flex  mt-2 ">
+        <Posts className=" flex flex-1"/>
 
-        <SideInfo />
+        <SideInfo className=" flex flex-3" />
       </div>
     </section>
   );

@@ -2,8 +2,8 @@ import React from "react";
 
 const recommended = () => {
   return (
-    <article className="sideInfo flex-3">
-      <div className="fire-topics w-[25rem] flex mx-[1rem] my-[1rem] items-center justify-center">
+    <article className="sideInfo ">
+      <div className="fire-topics flex mx-[1rem] my-[1rem] items-center justify-center">
         <div className="img-container w-[10rem] h-[6rem]">
           <img
             src="images/black-woman.png"

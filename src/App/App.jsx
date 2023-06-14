@@ -9,11 +9,13 @@ import {
 import Navbar from "../Navbar/Navbar";
 import Home from "../Pages/HomePage/Home";
 import NavLayout from "../Layout/NavLayout";
+import ViewPost from "../Pages/SinglePage/ViewPost";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<NavLayout />}>
       <Route index element={<Home />} />
+      <Route path="Singlepage" element={<ViewPost />} />
     </Route>
   )
 );
